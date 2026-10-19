@@ -1,10 +1,10 @@
 # Traffic Light FSM — Mission 01
 
 ## Project Overview
-A three-state Moore FSM implemented in Verilog and verified using Vivado behavioral simulation.
+A three-state Moore FSM implemented in Verilog and verified using Vivado simulation.
 
 ## State Transition
-`GREEN → YELLOW → RED → GREEN`
+GREEN → YELLOW → RED → GREEN
 
 ## Design
 - State register with asynchronous active-low reset
@@ -14,21 +14,19 @@ A three-state Moore FSM implemented in Verilog and verified using Vivado behavio
 ## Verification
 - Tool: AMD Xilinx Vivado
 - Testbench: `traffic_light_fsm_tb.v`
-- Verified transitions: GREEN → YELLOW → RED → GREEN
+- Verified state transitions: GREEN → YELLOW → RED → GREEN
 - LED output checks: PASS
 - Final simulation result: `ALL FSM TESTS PASSED`
 
 ## Files
 - `traffic_light_fsm.v` — FSM RTL design
 - `traffic_light_fsm_tb.v` — simulation testbench
-- `waveform.png` — simulation waveform
-- `verification_pass.png` — test output log
 
 ## Lessons Learned
 - Separating sequential logic from combinational logic
 - Implementing a Moore FSM
 - Debugging reset initialization in a testbench
-- Verifying state transitions with assertions and waveform inspection
+- Verifying state transitions using simulation waveforms
 
 ## Future Improvements
 - Add a counter to control state duration
